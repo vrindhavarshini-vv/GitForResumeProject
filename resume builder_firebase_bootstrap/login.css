@@ -1,0 +1,260 @@
+/* body{
+    display: flex;
+    justify-content: center;
+   }
+   .main{
+    border: 1px solid black;
+    width: 50%;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    background-color:black;
+    border-radius: 30px;
+    
+   }
+   .login_footer{
+       display: flex;
+       justify-content: space-between;
+       gap: 5px;
+   }
+
+   h3{
+      visibility:hidden
+   }
+   body{
+       display: flex;
+       justify-content: center;
+       background-image: url(912043-vertical-purple-wallpapers-for-desktop-1920x1200-ipad.jpg);
+       background-position: center;
+       background-blend-mode: overlay;
+       
+      
+       
+      }
+      .main{
+       border: 1px solid black;
+       width: 50%;
+       height: 500px;
+       display: flex;
+       justify-content: center;
+       margin-top:5%;
+       background:none;
+       border-radius: 30px;
+        background: transparent;
+       backdrop-filter:blur(30px);
+       
+       
+      }
+   .heading{
+    font-size: 30px;
+    color:rgb(217, 176, 255);
+   }
+    td{
+    font-size: 25px;
+    color:rgb(217, 176, 255);
+    border-radius:10px ;
+    font-weight: bold;
+   }
+   input{
+    border-radius: 10px;
+    width:100%;
+    outline: none;
+    border: none;
+    padding: 5px;
+    background-color: rgb(217, 176, 255);
+    font-size: large;
+    font-weight: bold;
+   }
+   input:hover{
+       
+       transition: 1s;
+       box-shadow: 1px 1px 2px 2px solid whitesmoke ;
+   }
+   .login_footer{
+    margin-top: 5%;
+   display: flex;
+   justify-content: center;
+   }
+   button {
+    --glow-color: rgb(217, 176, 255);
+    --glow-spread-color: rgba(191, 123, 255, 0.781);
+    --enhanced-glow-color: rgb(231, 206, 255);
+    --btn-color: black;
+    border: .25em solid var(--glow-color);
+    padding: 1em 3em;
+    color: var(--glow-color);
+    font-size: 15px;
+    font-weight: bold;
+    background-color: var(--btn-color);
+    border-radius: 1em;
+    outline: none;
+    box-shadow: 0 0 1em .25em var(--glow-color),
+           0 0 4em 1em var(--glow-spread-color),
+           inset 0 0 .75em .25em var(--glow-color);
+    text-shadow: 0 0 .5em var(--glow-color);
+    position: relative;
+    transition: all 0.3s;
+   }
+   
+   button::after {
+    pointer-events: none;
+    content: "";
+    position: absolute;
+    top: 120%;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: var(--glow-spread-color);
+    filter: blur(2em);
+    opacity: .7;
+    transform: perspective(1.5em) rotateX(35deg) scale(1, .6);
+   }
+   
+   button:hover {
+    color: var(--btn-color);
+    background-color: var(--glow-color);
+    box-shadow: 0 0 1em .25em var(--glow-color),
+           0 0 4em 2em var(--glow-spread-color),
+           inset 0 0 .75em .25em var(--glow-color);
+   }
+   
+   button:active {
+    box-shadow: 0 0 0.6em .25em var(--glow-color),
+           0 0 2.5em 2em var(--glow-spread-color),
+           inset 0 0 .5em .25em var(--glow-color);
+   }
+   .register{
+    text-align: center;
+    color: black;
+    margin-top: 65px;
+   }
+   a{
+    color:white;
+   }
+   a:hover{
+    color: rgb(82, 255, 47)
+   } */
+   *{
+    margin: 0;
+    padding: 0;
+ 
+   }
+.container-fluid{
+    background-image: url(pexels-aleksandar-pasaric-2341830\ \(1\).jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    height:100vh;
+}
+
+#container{
+border: 1px solid goldenrod;
+    padding: 5%;
+    background: transparent;
+    backdrop-filter: blur(10px);
+    
+    position: absolute;
+    top:20%;
+  
+ 
+}
+input{
+    border-radius: 20px;
+    border:1px solid rgb(252, 172, 0);
+    outline: none;
+    background: none;
+    color:#b17d10;
+    text-align: center;
+    
+    /* color:rgb(252, 172, 0);
+    background: -webkit-linear-gradient(
+        160deg,
+        #a54e07,
+        #b47e11,
+        #fef1a2,
+        #bc881b,
+        #a54e07
+      );
+   -webkit-background-clip:border-box;
+ 
+   */
+    
+}
+
+label{
+   font-size:x-large;
+    color:rgb(252, 172, 0);
+    background: -webkit-linear-gradient(
+        160deg,
+        #a54e07,
+        #b47e11,
+        #fef1a2,
+        #bc881b,
+        #a54e07
+      );
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+}
+.golden-button {
+    touch-action: manipulation;
+    display: inline-block;
+    outline: none;
+    font-family: inherit;
+    font-size: 1em;
+    box-sizing: border-box;
+    border: none;
+    border-radius: 0.3em;
+    height: 2.75em;
+    line-height: 2.5em;
+    text-transform: uppercase;
+    padding: 0 1em;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(110, 80, 20, 0.4),
+      inset 0 -2px 5px 1px rgba(139, 66, 8, 1),
+      inset 0 -1px 1px 3px rgba(250, 227, 133, 1);
+    background-image: linear-gradient(
+      160deg,
+      #a54e07,
+      #b47e11,
+      #fef1a2,
+      #bc881b,
+      #a54e07
+    );
+    border: 1px solid #a55d07;
+    color: rgb(120, 50, 5);
+    text-shadow: 0 2px 2px rgba(250, 227, 133, 1);
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    background-size: 100% 100%;
+    background-position: center;
+  }
+  
+  .golden-button:focus,
+  .golden-button:hover {
+    background-size: 150% 150%;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23),
+      inset 0 -2px 5px 1px #b17d10, inset 0 -1px 1px 3px rgba(250, 227, 133, 1);
+    border: 1px solid rgba(165, 93, 7, 0.6);
+    color: rgba(120, 50, 5, 0.8);
+  }
+  
+  .golden-button:active {
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(110, 80, 20, 0.4),
+      inset 0 -2px 5px 1px #b17d10, inset 0 -1px 1px 3px rgba(250, 227, 133, 1);
+  }
+  
+h1{
+  font-family:Bookman, URW Bookman L, serif;
+font-size: 25px;
+color:rgb(252, 172, 0);
+background: -webkit-linear-gradient(
+    160deg,
+    #a54e07,
+    #b47e11,
+    #fef1a2,
+    #bc881b,
+    #a54e07
+  );
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+}

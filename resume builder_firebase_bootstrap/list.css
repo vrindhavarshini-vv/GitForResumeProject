@@ -1,0 +1,367 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+tr,th,tbody{
+  background-color: #a54e07;
+}
+
+
+
+
+
+
+
+
+/* h1{
+    margin-top: 10px;
+}
+#main{
+    /* background:linear-gradient(   rgb(4, 11, 49),rgb(26, 1, 1)); */
+    /* width: 100%;
+    height: 100vh;
+    position: relative;
+    background:linear-gradient(rgb(61, 3, 75),#1b0122);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+
+}
+
+#title{
+    display: flex;
+    justify-content: center;
+    color:rgb(209, 188, 214);
+    font-size: 20px;
+   
+   
+    
+}
+.div{
+    width:80%;
+    height: 80vh;
+    -webkit-box-shadow:0px 0px 49px 0px rgba(153,3,217,0.78);
+    -moz-box-shadow: 0px 0px 49px 0px rgba(153,3,217,0.78);
+    box-shadow: 0px 0px 49px 0px rgba(153,3,217,0.78);
+background:linear-gradient(rgb(61, 3, 75),#1b0122);
+border-radius: 20px;
+
+    
+}
+.themeicon{
+   display:flex;
+  position: absolute;
+  right: 20px;
+  top:10px;
+   
+}
+
+#listtable{
+ 
+    padding: 20px;
+    
+}
+
+th{
+    padding: 40px;
+    font-weight: bold;
+    font-size: larger;
+    color:rgb(209, 188, 214);
+}
+
+
+.table{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+a{
+    color:rgb(209, 188, 214);
+    font-size: 20px;
+    text-align: left;
+}
+a:hover{
+    color:silver;
+    font-size: large;
+    
+}
+button{
+    outline: none;
+    border: none;
+}
+.delete{
+    border-radius: 20px;
+    padding: 5px;
+    text-align: center;
+    background-color: crimson;   
+}
+.delete:hover{
+    font-size: medium;
+    
+    
+}
+.edit{
+    padding: 5px;
+    border-radius: 20px;
+    text-align: center;
+    background-color: gold;
+}
+.edit:hover{
+    font-size: medium;    
+}
+.template{
+    border-radius: 20px;
+    padding: 5px;
+    text-align: center;
+    background:linear-gradient(  90deg, rgb(176, 113, 194),rgb(247, 156, 171),rgb(129, 13, 59));
+}
+.template:hover{
+    font-size: medium;
+    
+    
+}
+#logoutbutton {
+    padding: 15px 30px;
+    font-size: 18px;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    transition: 0.5s;
+    background:rgb(52, 0, 66);
+    cursor: pointer;
+    color:rgb(241, 210, 249);
+    box-shadow: 0 0 10px #363636, inset 0 0 10px #363636;
+  }
+  
+  #logoutbutton:hover {
+    animation: a 0.5s 1 linear;
+  }
+  
+  @keyframes a {
+    0% {
+      transform: scale(0.7, 1.3);
+    }
+  
+    25% {
+      transform: scale(1.3, 0.7);
+    }
+  
+    50% {
+      transform: scale(0.7, 1.3);
+    }
+  
+    75% {
+      transform: scale(1.3, 0.7);
+    }
+  
+    100% {
+      transform: scale(1, 1);
+    }
+  } */
+  #logoutbutton {
+    position: absolute;
+    right: 0%;
+     touch-action: manipulation;
+     display: inline-block;
+     outline: none;
+     font-family: inherit;
+     font-size: 1em;
+     box-sizing: border-box;
+     border: none;
+     border-radius: 0.3em;
+     height: 2.75em;
+     line-height: 2.5em;
+     text-transform: uppercase;
+     padding: 0 1em;
+     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(110, 80, 20, 0.4),
+       inset 0 -2px 5px 1px rgba(139, 66, 8, 1),
+       inset 0 -1px 1px 3px rgba(250, 227, 133, 1);
+     background-image: linear-gradient(
+       160deg,
+       #a54e07,
+       #b47e11,
+       #fef1a2,
+       #bc881b,
+       #a54e07
+     );
+     border: 1px solid #a55d07;
+     color: rgb(120, 50, 5);
+     text-shadow: 0 2px 2px rgba(250, 227, 133, 1);
+     cursor: pointer;
+     transition: all 0.2s ease-in-out;
+     background-size: 100% 100%;
+     background-position: center;
+   }
+   
+   #logoutbutton:focus,
+   #logoutbutton:hover {
+     background-size: 150% 150%;
+     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23),
+       inset 0 -2px 5px 1px #b17d10, inset 0 -1px 1px 3px rgba(250, 227, 133, 1);
+     border: 1px solid rgba(165, 93, 7, 0.6);
+     color: rgba(120, 50, 5, 0.8);
+   }
+   
+   #logoutbutton:active {
+     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(110, 80, 20, 0.4),
+       inset 0 -2px 5px 1px #b17d10, inset 0 -1px 1px 3px rgba(250, 227, 133, 1);
+   }
+  body{
+   
+    background:linear-gradient(rgb(1, 12, 43),rgb(0, 10, 36),rgb(0, 9, 36));
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width:100%;
+    height: 100vh;
+    overflow: hidden;
+ 
+    position: relative;
+  
+    
+   }
+  .h1{
+    font-family:Bookman, URW Bookman L, serif;
+    color:rgb(252, 172, 0);
+    background: -webkit-linear-gradient(
+        160deg,
+        #a54e07,
+        #b47e11,
+        #fef1a2,
+        #bc881b,
+        #a54e07
+      );
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+  }
+  .h2{
+    font-family:Bookman, URW Bookman L, serif;
+    color:rgb(252, 172, 0);
+    background: -webkit-linear-gradient(
+        160deg,
+        #a54e07,
+        #b47e11,
+        #fef1a2,
+        #bc881b,
+        #a54e07
+      );
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+  }
+  .table{
+    background-color: rgb(1, 12, 43);
+  }
+  a{
+    color:rgb(209, 188, 214);
+    font-size: 20px;
+    text-align: left;
+}
+a:hover{
+    color:silver;
+    font-size: large;
+    
+}
+button{
+    outline: none;
+    border: none;
+}
+
+
+/* .edit {
+    padding: 0.9em 1.8em;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 4px;
+    color: transparent;
+    border: 3px solid #ff0;
+    font-size: 14px;
+    position: relative;
+    font-family: inherit;
+    background: transparent;
+    cursor: pointer;
+  }
+  
+  .edit::before {
+    content: "edit";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #363636;
+    color: #ff0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s;
+  }
+  
+  .edit:hover::before {
+    left: 100%;
+    transform: scale(0) rotateY(360deg);
+    opacity: 0;
+  }
+  
+  .edit::after {
+    content: "edit";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background-color: #363636;
+    color: #ff0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s;
+    transform: scale(0) rotateY(0deg);
+    opacity: 0;
+  }
+  
+  .edit:hover::after {
+    left: 0;
+    transform: scale(1) rotateY(360deg);
+    opacity: 1;
+  }
+
+  
+.delete {
+    position: relative;
+    background-color: rgb(230, 34, 77);
+    border-radius: 5px;
+    box-shadow: rgb(121, 18, 55) 0px 4px 0px 0px;
+    padding: 15px;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    box-sizing: border-box;
+    width: 154px;
+    height: 49px;
+    color: #fff;
+    border: none;
+    font-size: 20px;
+    transition: all 0.3s ease-in-out;
+    z-index: 1;
+    overflow: hidden;
+  }
+  
+  .delete::before {
+    content: "";
+    background-color: rgb(248, 50, 93);
+    width: 0;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: width 700ms ease-in-out;
+    display: inline-block;
+  }
+  
+  .delete:hover::before {
+    width: 100%;
+  }
+   */

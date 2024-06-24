@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="myresume.js" type="text/javaScript"></script>
+</head>
+<body>
+    <h2 id="name"></h2>
+    <h3 id="email"></h3>
+    <h3 id="phonenumber"></h3>
+    <h3 id="date"></h3>
+    <h3 id="address"></h3>
+    <h3 id="dob"></h3>
+    <h3 id="objective"></h3>
+
+    <table border="1">
+        <thead>
+            <th>Course Name </th>
+            <th>Institute Name </th>
+            <th>Percentage Scored </th>
+            <th>Year </th>
+        </thead>
+        <tbody id="trs">
+          
+            <tr>
+                <td></td>
+
+            </tr>
+        </tbody>
+    </table>
+    </br>
+
+    <table border="1">
+        <thead>
+            <th>Company Name </th>
+            <th>Role </th>
+            <th>Year of Experience </th>
+        </thead>
+        <tbody id="experience">
+          
+            <tr>
+                <td></td>
+
+            </tr>
+        </tbody>
+    </table>
+
+    <br>
+    <label>Skills</label>
+    <ul id="skills"  border=1>
+        
+        <li></li>
+    </ul>
+
+    <table border="1">
+        <thead>
+            <th>Title</th>
+            <th>Role </th>
+            <th>Year</th>
+        </thead>
+        <tbody id="projects">
+          
+            <tr>
+                <td></td>
+
+            </tr>
+        </tbody>
+    </table>
+
+    <br>
+    <table border="1">
+        <thead>
+            <th>Certificate Name</th>
+            <th>Given Institution </th>
+           
+        </thead>
+        <tbody id="certification">
+          
+            <tr>
+                <td></td>
+
+            </tr>
+        </tbody>
+    </table>
+   
+    <hr>
+
+    <h2>Personal Details</h2>
+    
+    Father's Name:  <b id="fathername"></b><br>
+    Mother2's Name:  <b id="mothername"></b>
+
+    <h3>Languages Known</h3>
+    <ul id="languages">
+        <li></li>
+    </ul>
+    <br>
+    <h3>Hobbies</h3>
+    <ul id="hobby">
+        <li></li>
+    </ul>
+
+
+
+
+    
+</body>
+
+
+
+<script>
+   let params = new URLSearchParams(document.location.search);
+    let index= params.get("index");
+   
+
+    let existingdata=localStorage.getItem("resume")
+    let parseddata=JSON.parse(existingdata)
+    
+
+   
+    document.getElementById("name").innerHTML=parseddata[index].name;
+    document.getElementById("email").innerHTML=parseddata[index].email;
+    document.getElementById("phonenumber").innerHTML=parseddata[index].phonenumber;
+    document.getElementById("date").innerHTML=parseddata[index].date;
+    document.getElementById("address").innerHTML=parseddata[index].address;
+    document.getElementById("dob").innerHTML=parseddata[index].date_of_birth;
+    document.getElementById("objective").innerHTML=parseddata[index].objectives;
+   
+    
+
+   
+
+    let education = parseddata[index].education;
+     let trs="";
+    for (let each in education){ 
+        trs=trs +  `<tr><td> ${parseddata[index].education[each].course_name}</td>
+                        <td> ${parseddata[index].education[each].institution_name}</td>
+                        <td> ${parseddata[index].education[each].percentage_scored}</td>
+                        <td> ${parseddata[index].education[each].Year}</td>
+                    </tr>`   
+    }
+    document.getElementById("trs").innerHTML=trs
+
+
+
+    let experience=parseddata[index].experience;
+    let experience_trs="";
+    for (let each in experience){ 
+        experience_trs=experience_trs +  `<tr><td> ${parseddata[index].experience[each].company_name}</td>
+                        <td> ${parseddata[index].experience[each].role}</td>
+                        <td> ${parseddata[index].experience[each].year_of_experience}</td>
+                    </tr>`   
+    }
+    document.getElementById("experience").innerHTML= experience_trs
+
+
+    let project=parseddata[index].projects;
+    let project_trs="";
+    for (let each in project){ 
+        project_trs=project_trs +  `<tr><td> ${parseddata[index].projects[each].title}</td>
+                        <td> ${parseddata[index].projects[each].role}</td>
+                        <td> ${parseddata[index].projects[each].year}</td>
+                    </tr>`   
+    }
+    document.getElementById("projects").innerHTML= project_trs
+
+
+    let certification=parseddata[index].certifications;
+    let certification_trs="";
+    for (let each in certification){ 
+        certification_trs=certification_trs +  `<tr><td> ${parseddata[index].certifications[each].certificate_name}</td>
+                        <td> ${parseddata[index].certifications[each].given_institution}</td>
+                       
+                    </tr>`   
+    }
+    document.getElementById("certification").innerHTML= certification_trs
+
+
+
+
+    let skills = parseddata[index].skills;
+    let skills_tr="";
+    for (let each in skills){
+        skills_tr=skills_tr + `<li> ${parseddata[index].skills[each]}</li>`
+    }
+    document.getElementById("skills").innerHTML=skills_tr
+
+       
+   let languages = parseddata[index].personal_details.languages_known;
+    let language_tr="";
+    for (let each of languages){
+        language_tr=language_tr + `<li> ${each}</li>`
+    }
+   document.getElementById("languages").innerHTML=language_tr
+
+
+   let hobbies = parseddata[index].personal_details.hobbies;
+    let hobby_tr="";
+    for (let each of hobbies){
+        hobby_tr=hobby_tr + `<li> ${each}</li>`
+    }
+   document.getElementById("hobby").innerHTML=hobby_tr
+   
+
+    let fathername=parseddata[index].personal_details.father_name
+    document.getElementById("fathername").innerHTML=fathername
+
+    let mothername=parseddata[index].personal_details.mother_name
+    document.getElementById("mothername").innerHTML=mothername
+    
+   
+   
+</script>
+</html>
